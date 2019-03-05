@@ -1,0 +1,165 @@
+@font-face {
+	font-family: "FiraSans";
+	src: url("../fonts/FiraSans-Regular.eot");
+	src: 
+	url("../fontsJL/FiraSans-Regular.woff") format("woff"),
+	url("../fontsJL/FiraSans-Regular.ttf") format("ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "FiraSans";
+	src: url("../fonts/FiraSans-Medium.eot");
+	src: 
+	url("../fontsJL/FiraSans-Medium.woff") format("woff"),
+	url("../fontsJL/FiraSans-Medium.ttf") format("ttf");
+	font-weight: 600;
+}
+
+@font-face{
+	font-family:'Glyphicons Halflings';
+src:url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot');
+src:
+url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff') format('woff'),
+url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+.custom-list li {
+	position:relative;
+	line-height:20px;
+	padding-left:1.5rem;
+}
+.custom-list li:before{
+	content:"\e013";
+	font-family:'Glyphicons Halflings';
+	position:absolute;
+	top:0;
+	left:0;
+	font-size:12px;
+	line-height:18px;
+}
+
+body {
+	background-color:#30353b;
+	color:#535c65;
+	font-family: 'FiraSans', Arial, sans-serif;
+	font-weight::400;
+	font-size:14px;
+}
+p.lead {
+	font-size:16px;
+}
+.background {
+	padding:0;
+	overflow-x:hidden;
+}
+.logo {
+	background-color:white;
+	text-align:center;
+	padding:.5rem 0;
+}
+
+.main-content {
+	background-color:#f2f2f2;
+}
+.text-wrapper {
+	background-color:#30353b;
+	color:white;
+}
+
+.btn.orange {
+	width:100%;
+	background-color:#ff7607;
+	color:white;
+	text-align:center;
+	border-radius:0;
+	padding:0;
+	height:54px;
+	line-height:54px;
+	transition:1s;
+}
+
+.btn.orange:hover {
+	font-size:17px;
+}
+
+.border-top {
+	border-top:1px solid #dbdbdb;
+}
+
+#info {
+	position:relative;
+	background-color:rgba(255, 255, 255, 1);
+	padding:0 1.5rem;
+}
+#close {
+	position:absolute;
+	top:.5rem;
+	right:.8rem;
+}
+#info .info-header {
+	padding-top:1rem;
+	padding-bottom:1.5rem;
+	margin-bottom:1.5rem;
+	border-bottom:2px solid #535c65;
+	font-size:1.3rem;
+}
+#info .info-body {
+	padding-bottom:2rem;
+}
+.price {
+	font-size:30px;
+	padding-top:.3rem;
+	line-height:20px;
+	margin-bottom:0;
+	font-weight:600;
+}
+.price span {
+	font-size:14px;
+	font-weight:400;
+	text-decoration: line-through;
+}
+footer {
+	background-color:#30353b;
+	width:100%;
+	padding:.5rem;
+	color:#797b7e;
+	text-align:center;
+}
+
+@media (min-width: 768px) {
+	.background {
+		background-image:url('../imgJL/mood.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		height:100vh;
+	}
+	.logo {
+		margin-top:1rem;
+		max-width:300px;
+	}
+	#info {
+		position:relative;
+		background-color:rgba(255, 255, 255, 0.9);
+		padding:0 1.5rem;
+	}
+}
+@media (min-width: 992px) {
+	.logo {
+		margin-top:1rem;
+		max-width:300px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.background {
+		padding-bottom:3rem;
+	}
+	footer {
+		position:absolute;
+		bottom:0;
+	}
+	#info {
+		padding:0 2rem;
+	}
+}
