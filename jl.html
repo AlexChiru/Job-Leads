@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="ro" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>Job Leads</title>
+
+    <link type="text/css" href="cssJL/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" href="cssJL/custom.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container background">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 p-md-4">
+                <div class="logo mb-md-4">
+                    <img src="imgJL/logo_JL.svg" alt="Job Leads Logo" width="260"/>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-10">
+                        <div class="main-content">
+                            <div class="text-wrapper p-3">
+                                <p class="mt-2 lead">
+                                    Sehr geehrter Herr Mustermann, starten Sie sauber ins Jahr 2015 mit neuen Perspektiven.
+                                </p>
+                            </div>
+                            <img src="imgJL/mood-mobile.jpg" class="img-fluid w-100 d-md-none"/>
+                            <div class="p-3">
+                                <ul class="list-unstyled custom-list mt-3 mb-4">
+                                    <li class="pb-2">Unbegrenzte Ansicht aller Premium-Jobs</li>
+                                    <li class="pb-2">Gezielte Filtermöglichkeiten nach Jobs mit mehr Gehalt</li>
+                                </ul>
+                                <div class="border-top pt-3">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="d-flex">
+                                            <div class="media mt-3 mb-3" style="margin:0 auto;min-width:226px;line-height:20px;height:50px;">
+                                              <img src="imgJL/arrowCircle.svg" alt="checkmark" width="50" height="50" style="line-height:20px;"/>
+                                              <div class="media-body ml-3 mr-3">
+                                                <p class="price">
+                                                    EUR 79,40<br/>
+                                                    <span>EUR 13,23 pro Monat</span>
+                                                </p>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" id="openInfo" class="btn orange">Jetzt säubern und neuen Job finden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="d-none d-md-block col-md-2"></div>
+                    <div class="col-12 col-md-10">
+                        <div id="info" class="" style="display:none;">
+                            <button type="button" class="close" id="close" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                            <p class="info-header">
+                                Mehr Informationen:
+                            </p>
+                            <p class="info-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum <br/><br/>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center pb-4 pb-md-1 pl-4 pr-4">
+        <p>
+            &copy; 2014 JobLeads GmbH - Alle Rechte vorbehalten
+        </p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script src="jsJL/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#openInfo").click(function(){
+            $(this).fadeOut();
+            $("#info").slideDown( "slow", function() {
+              });
+            if ($(window).height() < 800) {
+                $(".background").animate({ scrollTop: 0 }, "slow");
+            }
+          });
+          $("#close").click(function(){
+            $("#info").slideUp( "slow", function() {
+              });
+            $("#openInfo").fadeIn();
+          });
+        });
+    </script>
+</body>
+
+</html>
